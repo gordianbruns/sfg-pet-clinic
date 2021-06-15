@@ -1,11 +1,11 @@
 package edu.depauw.sfgpetclinic.services.map;
 
 import edu.depauw.sfgpetclinic.model.Vet;
-import edu.depauw.sfgpetclinic.services.CrudService;
+import edu.depauw.sfgpetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {

@@ -1,6 +1,6 @@
 package edu.depauw.sfgpetclinic.model;
 
-public class PetType extends BaseEntity {
+public class PetType {
 
     private String name;
 

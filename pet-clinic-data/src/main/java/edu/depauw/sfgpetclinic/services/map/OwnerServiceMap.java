@@ -1,11 +1,12 @@
 package edu.depauw.sfgpetclinic.services.map;
 
 import edu.depauw.sfgpetclinic.model.Owner;
-import edu.depauw.sfgpetclinic.services.CrudService;
+import edu.depauw.sfgpetclinic.services.OwnerService;
 
+import java.util.List;
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
     public Set<Owner> findAll() {
@@ -30,5 +31,15 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
     @Override
     public void deleteById(Long id) {
         super.deleteById(id);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
+    }
+
+    @Override
+    public List<Owner> findAllByLastNameLike(String lastName) {
+        return null;
     }
 }
