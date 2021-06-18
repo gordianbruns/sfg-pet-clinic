@@ -2,10 +2,12 @@ package edu.depauw.sfgpetclinic.services.map;
 
 import edu.depauw.sfgpetclinic.model.Owner;
 import edu.depauw.sfgpetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
